@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="icon" href="logo.png">
+  
+  <!-- fontawesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+  
+  <!-- sweetalert2 css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.7.2/sweetalert2.min.css">
+  
+  <!-- my css -->
+  <link rel="stylesheet" href="style.css">
+  <title>Vintage Vault</title>
+</head>
+<body>
+
+  <!-- navbar start -->
+  <nav class="navbar">
+    <a href="#" class="navbar-logo">Vintage <span>Vault</span></a>
+    <div class="navbar-list-group">
+      <a href="#home" class="navbar-list">Home</a>
+      <a href="#about" class="navbar-list">Tentang Kami</a>
+      <a href="#product" class="navbar-list">Produk</a>
+      <a href="#contact" class="navbar-list">Kontak</a>
+      <button onclick="myFunction()">Dark Mode</button>
+    </div>
+    <div class="navbar-icon">
+      <i data-feather="search" class="icon btn-modal" id="search" data-modal="searchModal"></i>
+      <i data-feather="shopping-cart" class="icon btn-modal" id="shopping-cart" data-modal="tableModal"></i>
+      <i data-feather="menu" class="icon" id="hamburger"></i>
+    </div>
+  </nav>
+  <!-- navbar end -->
+  
+  <!-- section hero start -->
+  <section class="hero" id="home">
+    <div class="content">
+      <h1>Temukan barang <span>berkualitas</span> dengan harga  <span>hemat</span></h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat nisi nulla sit consequatur enim. Recusandae voluptatem, voluptatum necessitatibus qui.</p>
+      <a href="#product" class="button">Beli Sekarang</a>
+    </div>
+  </section>
+  <!-- section hero end -->
+  
+  <!-- section about start -->
+  <section class="about" id="about">
+    <h2>Tentang <span>Kami</span></h2>
+    <div class="row">
+      <div class="image-wrapper">
+        <img src="logo.png" width="70" alt="tentang kami" class="image">
+      </div>
+      <div class="content">
+        <h3>Kenapa Memilih Kami</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda nostrum iste odio aliquam eligendi voluptatum laboriosam earum. At harum, sequi.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat ex ducimus ipsa ut iste aspernatur.</p>
+      </div>
+    </div>
+  </section>
+  <!-- section about end -->
+  
+  <!-- section menu start -->
+  <section class="product" id="product">
+    <div class="header">
+      <h2>Produk <span>Kami</span></h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem in aliquid nemo totam atque qui!</p>
+    </div>
+    <div class="row">
+      <div class="image-wrapper">
+        <img src="sepatu.jpeg" alt="product1" class="image">
+      </div>
+      <div class="content">
+        <h3>Air Jordan 1 Retro High Midnight Navy</h3>
+        <p><b>Rp. 1.500.000,00</b></p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat ex ducimus ipsa ut iste aspernatur.</p>
+        <a href="" class="button">Beli Sekarang</a>
+      <div class="image-wrapper">
+        <img src="jaket.jpeg" alt="product1" class="image">
+      </div>
+      <div class="content">
+        <h3>Hodie Biru Polos</h3>
+        <p><b>Rp. 100.000,00</b></p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat ex ducimus ipsa ut iste aspernatur.</p>
+        <a href="" class="button">Beli Sekarang</a>
+        <div class="image-wrapper">
+        <img src="tshirt.jpeg" alt="product1" class="image">
+      </div>
+      <div class="content">
+        <h3>Marvin The Martian Tshirt </h3>
+        <p><b>Rp. 120.000,00</b></p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat ex ducimus ipsa ut iste aspernatur.</p>
+        <a href="" class="button">Beli Sekarang</a>
+    <div class="card-container"></div>
+  </section>
+  <!-- section menu end -->
+  
+  <!-- section contact start -->
+  <section class="contact" id="contact">
+    <div class="header">
+      <h2>Kontak <span>Kami</span></h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit incidunt ullam animi quos eveniet nostrum laboriosam at molestiae ipsam.</p>
+    </div>
+    <div class="row">
+      <div class="image-wrapper">
+        <img src="telepon.jpg" alt="kontak kami" class="image">
+      </div>
+      <div class="form-wrapper">
+        <form action="" class="form">
+          <div class="form-group">
+            <label for="nama" class="label">Nama lengkap</label>
+            <input type="text" id="nama" class="input input-name" placeholder="Nama lengkap">
+          </div>
+          <div class="form-group">
+            <label for="email" class="label">Alamat email</label>
+            <input type="text" id="email" class="input input-email" placeholder="Alamat email">
+          </div>
+          <div class="form-group">
+            <label for="nomor" class="label">Nomor telepon</label>
+            <input type="number" id="nomor" class="input input-nomor" placeholder="No.telepon">
+          </div>
+          <button type="submit" class="button btn-submit">Submit</button>
+        </form>
+      </div>
+    </div>
+  </section>
+  <!-- section contact end -->
+  
+  <!-- footer start -->
+  <footer class="footer">
+    <div class="wrapper">
+      <a href="https://instagram.com/marginleft_" target="_blank"><i data-feather="instagram"></i></a>
+      <a href="https://www.facebook.com/Es Teh Panas" target="_blank"><i data-feather="facebook"></i></a>
+    </div>
+    <p>created by <span>Vintage Vault</span></a> | © 2024</p>
+  </footer>
+  <!-- footer end -->
+
+
+  
+  <!-- feather icon -->
+  <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+  <script src="js/icon.js"></script>
+  
+  <!-- sweetalert2 js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.7.2/sweetalert2.min.js"></script>
+  
+  <!-- my javascript -->
+  <script src="java.js"></script>
+</body>
+</html>
